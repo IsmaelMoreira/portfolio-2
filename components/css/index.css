@@ -178,7 +178,11 @@ header nav a:hover {
     background-color: #333;
     flex-wrap: wrap;
 }
-
+.cards h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
 .card {
     background-color: #444;
     border-radius: 10px;
@@ -287,6 +291,7 @@ footer p {
     .content {
         flex-direction: column;
         text-align: center;
+        padding: 20px 0;
     }
 
     .content-text {
