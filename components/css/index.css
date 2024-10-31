@@ -151,11 +151,11 @@ header nav a:hover {
 }
 
 .about blockquote {
-    border-left: 4px solid #007bff; /* Borda azul à esquerda */
+    border-left: 4px solid #FF9800; /* Borda azul à esquerda */
     padding-left: 1rem; /* Espaço interno à esquerda */
     margin: 1.5rem 0; /* Margem em cima e embaixo */
     font-style: italic; /* Itálico para a citação */
-    color: #555; /* Cor da fonte da citação */
+    color: #757575; /* Cor da fonte da citação */
 }
 
 
