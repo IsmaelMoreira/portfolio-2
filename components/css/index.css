@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
@@ -30,6 +34,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #FF5722;
     border-radius: 5px;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -60,54 +65,99 @@ header nav a:hover {
 }
 
 .about-me {
-    padding: 100px;
+    display: flex; /* Usa flexbox para alinhar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 2rem; /* Espaçamento ao redor da seção */
 }
 
 .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    display: flex; /* Alinha o texto e a imagem lado a lado */
+    max-width: 1200px; /* Limita a largura total da seção */
+    width: 100%; /* Faz com que a seção ocupe a largura total */
 }
 
 .content-text {
-    max-width: 50%;
-    flex: 1;
+    flex: 1; /* Permite que o texto ocupe o espaço disponível */
+    padding-right: 2rem; /* Espaço à direita do texto */
 }
 
 .content-text h1 {
-    font-size: 48px;
-    margin: 0;
+    font-size: 2.5rem; /* Tamanho da fonte do título */
+    margin-bottom: 0.5rem; /* Margem abaixo do título */
+    color: #ffffff; /* Cor do título */
 }
 
 .content-text h2 {
-    font-size: 32px;
-    margin: 10px 0;
+    font-size: 2rem; /* Tamanho da fonte do subtítulo */
+    margin-bottom: 1rem; /* Margem abaixo do subtítulo */
+    color: #fafafa; /* Cor do subtítulo */
 }
 
 .content-text p {
-    font-size: 18px;
+    font-size: 1rem; /* Tamanho da fonte do parágrafo */
+    line-height: 1.5; /* Altura da linha para melhor legibilidade */
+    margin-bottom: 1.5rem; /* Margem abaixo do parágrafo */
+    color: #ffffff; /* Cor do texto */
 }
 
 .contact-button {
-    display: inline-block;
-    padding: 15px 30px;
-    margin-top: 20px;
-    background-color: #FF5722;
-    color: #F3F3F3;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
+    display: inline-block; /* Faz o link se comportar como um botão */
+    padding: 0.5rem 1rem; /* Espaço interno do botão */
+    background: linear-gradient(to right, #FF5722, #FF9800); /* Gradiente de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    transition: background-color 0.3s; /* Efeito de transição */
 }
 
-.contact-button:hover {
-    background-color: #E64A19;
-}
+
 
 .content-image {
-    flex: 1;
-    text-align: center;
+    flex: 1; /* Permite que a imagem ocupe o espaço disponível */
 }
+
+.content-image img {
+    max-width: 100%; /* A imagem se ajusta ao espaço disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas da imagem */
+}
+
+
+.about {
+    display: flex; /* Usa flexbox para organizar a seção */
+    flex-direction: column; /* Organiza a seção verticalmente */
+    align-items: center; /* Centraliza horizontalmente os itens */
+    padding: 2rem; /* Adiciona espaçamento ao redor da seção */
+}
+
+.about-content {
+    display: flex; /* Usa flexbox para alinhar imagem e texto */
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: center; /* Centraliza horizontalmente os itens */
+    margin-top: 1rem; /* Espaço acima do conteúdo */
+}
+
+.about-image {
+    margin-right: 2rem; /* Espaçamento à direita da imagem */
+    border-radius: 50%; /* Para deixar a imagem circular */
+    width: 150px; /* Ajuste o tamanho da imagem */
+    height: 150px; /* Ajuste o tamanho da imagem */
+}
+
+.about-text {
+    max-width: 600px; /* Limita a largura do texto */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.about blockquote {
+    border-left: 4px solid #007bff; /* Borda azul à esquerda */
+    padding-left: 1rem; /* Espaço interno à esquerda */
+    margin: 1.5rem 0; /* Margem em cima e embaixo */
+    font-style: italic; /* Itálico para a citação */
+    color: #555; /* Cor da fonte da citação */
+}
+
 
 .round-image {
     width: 400px;
@@ -172,39 +222,79 @@ header nav a:hover {
 
 /* Estilos para os cards */
 .cards {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-    background-color: #333;
-    flex-wrap: wrap;
-}
-.cards h2{
-    font-size: 36px;
-    margin-bottom: 20px;
+    padding: 2rem;
+    /* Espaçamento interno */
     text-align: center;
+    /* Centraliza o texto */
 }
+
+.cards h2 {
+    font-size: 2rem;
+    /* Tamanho da fonte do título */
+    margin-bottom: 1.5rem;
+    /* Margem abaixo do título */
+}
+
 .card {
-    background-color: #444;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    width: 30%;
-    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    /* Borda leve */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra leve */
+    margin: 1rem;
+    /* Margem entre os cards */
+    padding: 1rem;
+    /* Espaçamento interno do card */
+    display: inline-block;
+    /* Para que os cards fiquem lado a lado */
+    width: calc(33% - 2rem);
+    /* Largura dos cards em 3 colunas, considerando a margem */
+    vertical-align: top;
+    /* Alinha os cards ao topo */
 }
 
 .card img {
     max-width: 100%;
-    border-radius: 10px 10px 0 0;
+    /* Imagem responsiva */
+    border-radius: 8px;
+    /* Bordas arredondadas na imagem */
 }
 
 .card h3 {
-    font-size: 24px;
-    margin: 15px 0;
+    margin: 0.5rem 0;
+    /* Margem em cima e embaixo do título do card */
 }
 
 .card p {
-    font-size: 16px;
+    color: #666;
+    /* Cor do texto */
 }
+
+.card i {
+    font-size: 40px;
+    /* Tamanho do ícone */
+    color: #5cacee;
+    /* Cor do ícone */
+    margin-bottom: 10px;
+    /* Espaço entre ícone e texto */
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 2rem);
+        /* 2 colunas em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        /* 1 coluna em telas muito pequenas */
+    }
+}
+
 
 /* Estilos para a seção de contato */
 .contato {

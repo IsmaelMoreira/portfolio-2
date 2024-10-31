@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/components/css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Web Designer</title>
 </head>
 
@@ -15,31 +16,76 @@
             <h1>Web Designer</h1>
         </div>
         <nav>
-            <a href="#">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">SKILLS</a>
-            <a href="#">PROJECTS</a>
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
         </nav>
     </header>
-    <section class="about-me">
+
+    <section id="home" class="about-me">
         <div class="content">
             <div class="content-text">
-                <h1>Olá, Sou Ismael</h1>
+                <h1 style="margin-top: 80px";>Olá, Sou Ismael</h1>
                 <h2>Sou Web Designer</h2>
                 <p>Web design é a prática de criar e desenvolver a aparência visual e a estrutura de um site na
                     internet. Envolve a combinação de elementos visuais, como layout, cores, tipografia, imagens e
                     ícones, para criar uma experiência estética e funcional para os usuários que visitam o site.</p>
-                <a href="#" class="contact-button">CONTACT US</a>
+                <a href="#contact" class="contact-button">CONTACT US</a>
             </div>
             <div class="content-image">
-                <img src="https://via.placeholder.com/400" alt="Imagem de paisagem">
+                <img src="/components/img/AboutMe.png" alt="Imagem de paisagem">
             </div>
         </div>
     </section>
 
     <section class="gradint-orange"></section>
 
-    <section class="projects">
+    <section id="about" class="about">
+        <h2>Sobre Mim</h2>
+        <div class="about-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv9XRS_vDHY4wXKH-pWh0m7yeTPJHnml3k5cIoiK14lzrpzYDMSEMxIveUfNmuqQYb3ho&usqp=CAU" alt="Foto de Ismael" class="about-image">
+            <div class="about-text">
+                <h3>Olá, eu sou Ismael!</h3>
+                <p>Sou um jovem de 18 anos apaixonado por tecnologia. Desde cedo, venho investindo em meus estudos nesta
+                    área e estou determinado a me destacar no mercado. Passo longas horas em frente ao computador,
+                    absorvendo conhecimento e aprimorando minhas habilidades.</p>
+                <p>De estatura média e cabelos pretos, estou em contínuo processo de aprendizagem, sempre pronto para
+                    aproveitar as oportunidades que surgem em meu caminho.</p>
+                <blockquote>
+                    “Não faz sentido olhar para trás e pensar: 'devíamos ter feito isso', 'devíamos ter feito aquilo'. O
+                    que importa é o que vamos fazer daqui para frente.” - <strong>Steve Jobs</strong>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="gradint-orange"></section>
+
+    <section  id="skills" class="cards">
+        <h2>Habilidades</h2>
+        <div class="card">
+            <i class="fas fa-water"></i> <!-- Ícone para Calmo -->
+            <h3>Calmo</h3>
+            <p>Capacidade de lidar com situações estressantes com tranquilidade e serenidade.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-sync-alt"></i> <!-- Ícone para Adaptável -->
+            <h3>Adaptável</h3>
+            <p>Facilidade em se ajustar a novas condições e ambientes de trabalho.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-book-open"></i> <!-- Ícone para Fácil de Aprender -->
+            <h3>Fácil de Aprender</h3>
+            <p>Capacidade de assimilar novos conhecimentos e habilidades rapidamente.</p>
+        </div>
+    </section>
+
+    <section class="gradint-orange"></section>
+
+    <section id="projects" class="projects">
         <h2>Projetos Recentes</h2>
         <div class="project">
             <img src="/components/img/tailwind.png" alt="Imagem de um projeto">
@@ -48,7 +94,7 @@
                 personalização quanto ao comprimento e complexidade da senha. Utilizando HTML para a estrutura, Tailwind
                 CSS para a estilização e JavaScript para a lógica, o gerador de senhas proporciona uma interface
                 amigável e intuitiva.</p>
-            <a href="https://generator-password-with-tailwind.vercel.app/,">Teste Agora</a>
+            <a href="https://generator-password-with-tailwind.vercel.app/">Teste Agora</a>
         </div>
         <div class="project">
             <img src="/components/img/apple.png" alt="Imagem de um projeto">
@@ -59,56 +105,29 @@
             <a href="https://apple-calculator-pi.vercel.app/">Teste Agora</a>
         </div>
         <div class="project">
-            <img src="https://via.placeholder.com/800x400" alt="Imagem de um projeto">
+            <img src="/components/img/CatInLooping.png" alt="Imagem de um projeto">
             <h3>Projeto 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at neque in diam sagittis
-                malesuada.</p>
-            <a href="http://">Teste Agora</a>
+            <p>Este projeto apresenta um gato 3D em looping que gira continuamente e exibe uma saudação adaptável: 'Bom
+                dia!', 'Boa tarde!' ou 'Boa noite!', dependendo da hora. Essa animação divertida e interativa traz um
+                toque especial e acolhedor à sua página web.</p>
+            <a href="https://3d-cute-cat.vercel.app/">Teste Agora</a>
         </div>
     </section>
-
     <section class="gradint-orange"></section>
 
-    <section class="cards">
-        <h2>Habilidades</h2>
-        <div class="card">
-            <img src="https://via.placeholder.com/400" alt="Imagem de um card">
-            <h3>Card 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at neque in diam sagittis
-                malesuada.</p>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/400" alt="Imagem de um card">
-            <h3>Card 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at neque in diam sagittis
-                malesuada.</p>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/400" alt="Imagem de um card">
-            <h3>Card 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at neque in diam sagitt
-    </section>
-
-    <section class="gradint-orange"></section>
-
-    <section class="contato">
+    <section id="contact" class="contato">
         <h2>Contato</h2>
-        <form action="#">
-            <input type="text" placeholder="Nome">
-            <input type="email" placeholder="Email">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Nome" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" cols="30" rows="10" placeholder="Mensagem" required></textarea>
             <input type="submit" value="ENVIAR">
         </form>
 
-        <div class="social-media">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-            <a href="#"><i class="bi bi-github"></i></a>
-        </div>
-
         <p>&copy; 2024 Web Designer. Todos os direitos reservados.</p>
     </section>
-</body>
 
+    <script src="/components/js/index.js"></script>
+</body>
 
 </html>
