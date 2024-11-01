@@ -121,8 +121,21 @@ header nav a:hover {
     max-width: 100%; /* A imagem se ajusta ao espaço disponível */
     height: auto; /* Mantém a proporção da imagem */
     border-radius: 10px; /* Bordas arredondadas da imagem */
+    filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));
+    animation: animateWhiteShadow 3s ease-in-out infinite;
 }
 
+@keyframes animateWhiteShadow {
+    0% {
+        filter: drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.3));
+    }
+    50% {
+        filter: drop-shadow(0px 15px 20px rgba(255, 255, 255, 0.7));
+    }
+    100% {
+        filter: drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.3));
+    }
+}
 
 .about {
     display: flex; /* Usa flexbox para organizar a seção */
